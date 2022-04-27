@@ -2,6 +2,11 @@
   <style>
     .go-back-link {
       color: rgb(0, 113, 113);
+      transition: color 0.2s;
+    }
+
+    .go-back-link:hover {
+      color: rgb(164, 99, 0);
     }
 
     .price-availabity {
@@ -14,9 +19,19 @@
       border: none;
       border-radius: 20px;
       color: rgb(0, 0, 0);
+      cursor: pointer;
       height: 40px;
       margin-right: 8px;
+      transition: background-color 0.2s, opacity 0.2s;
       width: 160px;
+    }
+
+    .amzn-addToCart-btn:hover {
+      background-color: rgb(226, 189, 1);
+    }
+
+    .amzn-addToCart-btn:active {
+      opacity: 0.4;
     }
 
     .amzn-BuyNow-btn {
@@ -24,9 +39,19 @@
       border: none;
       border-radius: 20px;
       color: rgb(0, 0, 0);
+      cursor: pointer;
       height: 40px;
       margin-right: 8px;
+      transition: background-color 0.2s, opacity 0.2s;
       width: 160px;
+    }
+
+    .amzn-BuyNow-btn:hover {
+      background-color: rgb(209, 125, 1);
+    }
+
+    .amzn-BuyNow-btn:active {
+      opacity: 0.4;
     }
   </style>
     <a href="index.html" class="go-back-link">Back to Amazon</a>
