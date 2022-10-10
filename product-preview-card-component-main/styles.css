@@ -1,5 +1,7 @@
 body {
   background-color: hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 .card-container {
@@ -18,6 +20,16 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 0 0 1em 1em;
   bottom: 33px;
-  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 17px;
+  padding-right: 17px;
   position: absolute;
+  height: 303px;
+}
+
+.fraunces {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
 }
