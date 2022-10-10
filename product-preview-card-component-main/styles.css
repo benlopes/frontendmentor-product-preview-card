@@ -4,4 +4,20 @@ body {
 
 .card-container {
   background-image: url('./images/image-product-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1em;
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+  top: 15px;
+  width: 375px;
+}
+
+.product-details-container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 0 1em 1em;
+  bottom: 33px;
+  padding: 70px;
+  position: absolute;
 }
