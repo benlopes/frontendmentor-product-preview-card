@@ -4,71 +4,75 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: hsl(30, 38%, 92%);
-  color: hsl(228, 12%, 48%);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+html, body {
+  height: 100%;
 }
 
-@media (max-width: 600px) {
-  .card-container {
-    background-image: url('./images/image-product-mobile.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 0.75em;
-    height: 667px;
-    position: relative;
-    margin: 0 auto;
-    top: 15px;
-    width: 350px;
-  }
-  
-  .product-details-container {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 0 0 1em 1em;
-    bottom: 33px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 25px;
-    padding-right: 25px;
-    position: absolute;
-    height: 390px;
-    width: 100%;
-  }
-  
-  .category {
-    font-size: 12px;
-    letter-spacing: 5px;
-    padding-top: 12px;
-  }
-  
-  .title {
-    color: hsl(212, 21%, 14%);
-  }
-  
-  .description {
-    line-height: 22px;
-    margin-top: 10px;
-  }
-  
-  .fraunces {
-    font-family: 'Fraunces', serif;
-    font-size: 32px;
-  }
-  
-  .prices-container {
-    align-items: center;
-    display: flex;
-    margin-top: 8px;
-  }
-  
-  .discounted {
-    color: hsl(158, 36%, 37%);
-    padding-right: 20px;
-  }
-  
+body {
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.card-container {
+  background-image: url('./images/image-product-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0.75em;
+  height: 392px;
+  position: relative;
+  /* top: 15px; */
+  width: 538px;
+}
+
+
+.product-details-container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 0.75em 0.75em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: absolute;
+  height: 392px;
+  right: 1px;
+  width: 52%;
+}
+
+.category {
+  font-size: 12px;
+  letter-spacing: 5px;
+  padding-top: 12px;
+}
+
+.title {
+  color: hsl(212, 21%, 14%);
+}
+
+.description {
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+.fraunces {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+}
+
+.prices-container {
+  align-items: center;
+  display: flex;
+  margin-top: 8px;
+}
+
+.discounted {
+  color: hsl(158, 36%, 37%);
+  padding-right: 20px;
 }
 
 button {
@@ -89,3 +93,18 @@ button img {
   margin-right: 10px;
 }
 
+@media (max-width: 700px) {
+  .card-container {
+    background-image: url('./images/image-product-mobile.jpg');
+    border-radius: 0.75em 0.75em 0 0;
+    height: 667px;
+    width: 350px;
+  }
+
+  .product-details-container {
+    border-radius: 0 0 1em 1em;
+    bottom: 33px;
+    right: 0px;
+    width: 100%;
+  }
+}
