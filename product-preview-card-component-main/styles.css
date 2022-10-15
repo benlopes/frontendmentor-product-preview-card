@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html, body {
@@ -81,11 +82,20 @@ button {
   border-style: none;
   display: flex;
   color:hsl(0, 0%, 100%);
+  cursor: pointer;
   font-weight: 700;
   height: 50px;
   justify-content: center;
   margin: 10px 0 20px;
   width: 100%;
+}
+
+button:hover {
+  background-color: hsl(158, 36%, 47%);
+}
+
+button:active {
+  background-color: hsl(158, 36%, 20%);
 }
 
 button img {
