@@ -25,7 +25,6 @@ body {
   border-radius: 0.75em;
   height: 392px;
   position: relative;
-  /* top: 15px; */
   width: 538px;
 }
 
@@ -94,10 +93,16 @@ button img {
 }
 
 @media (max-width: 700px) {
+  body {
+    display: block;
+  }
+
   .card-container {
     background-image: url('./images/image-product-mobile.jpg');
     border-radius: 0.75em 0.75em 0 0;
     height: 667px;
+    margin: 0 auto;
+    top: 2%;
     width: 350px;
   }
 
