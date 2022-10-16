@@ -102,6 +102,10 @@ button img {
   margin-right: 10px;
 }
 
+.attribution {
+  text-align: center;
+}
+
 @media (max-width: 700px) {
   body {
     display: block;
